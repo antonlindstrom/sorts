@@ -17,3 +17,9 @@ func TestSort(t *testing.T) {
 		}
 	}
 }
+
+func BenchmarkSort(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Sort([]int{10, 9, 4, 7, 3, 1, 8, 5, 2, 6})
+	}
+}

@@ -9,7 +9,7 @@ func Sort(set []int) []int {
 	var left []int
 	var right []int
 
-	middle := len(set)/2
+	middle := len(set) / 2
 
 	// Append all before middle to left
 	for _, i := range set[:middle] {
@@ -33,12 +33,12 @@ func Sort(set []int) []int {
 func merge(left, right []int) (result []int) {
 
 	// Run through all until the sides are empty
-	for (len(left) > 0 || len(right) > 0) {
+	for len(left) > 0 || len(right) > 0 {
 
 		// Compare sides
-		if (len(left) > 0 && len(right) > 0) {
+		if len(left) > 0 && len(right) > 0 {
 
-			if (left[0] <= right[0]) {
+			if left[0] <= right[0] {
 
 				result = append(result, left[0])
 				left = left[1:]
@@ -50,12 +50,12 @@ func merge(left, right []int) (result []int) {
 
 			}
 
-		} else if (len(left) > 0) {
+		} else if len(left) > 0 {
 
 			result = append(result, left[0])
 			left = left[1:]
 
-		} else if (len(right) > 0) {
+		} else if len(right) > 0 {
 
 			result = append(result, right[0])
 			right = right[1:]

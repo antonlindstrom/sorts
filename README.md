@@ -2,6 +2,7 @@
 
 I suck at algorithms. I'll try to implement some to understand how they work.
 
-We should be able to test with `go test ./...`
+We should be able to test with `make`
 
-Benchmark: `go test -bench=. ./...`
+* Benchmark: `make benchmark`
+* Test coverage: `make coverage`

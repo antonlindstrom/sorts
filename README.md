@@ -7,4 +7,4 @@ We should be able to test with `make`
 * Benchmark: `make benchmark`
 * Test coverage: `make coverage`
 
-I'm sure this could be used for something but I strongly recommend not using this in production.
+I'm sure this could be used for something useful but I strongly recommend not using this in production.

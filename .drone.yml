@@ -4,6 +4,7 @@ env:
 script:
   - make test
   - make benchmark
+  - make coverage
 services:
 notify:
   email:

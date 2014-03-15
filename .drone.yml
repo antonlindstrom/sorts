@@ -3,8 +3,8 @@ env:
   - GOPATH=/var/cache/drone
 script:
   - make test
-  - make benchmark
   - make coverage
+  - make benchmark
 services:
 notify:
   email:

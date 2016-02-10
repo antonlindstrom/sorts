@@ -1,5 +1,6 @@
 package insertionsort
 
+// Sort sorts a slice of integers with insertion sort.
 func Sort(set []int) []int {
 	for i := 1; i < len(set); i++ {
 		value := set[i]

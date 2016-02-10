@@ -1,5 +1,6 @@
 package countingsort
 
+// Sort sorts a slice of integers with comb sort.
 func Sort(set []int) []int {
 	z, min, max := 0, 0, maxNum(set)
 	count := make([]int, max-min+1)
@@ -19,8 +20,8 @@ func Sort(set []int) []int {
 	return set
 }
 
-// Find max value in set, we could just assume but
-// that's a bit sad when we run over the limit
+// maxNum finds max value in set, we could just assume
+// but that's a bit sad when we run over the limit.
 func maxNum(set []int) int {
 	max := 0
 

@@ -1,5 +1,6 @@
 package combsort
 
+// Sort sorts a slice of integers with comb sort.
 func Sort(set []int) []int {
 	gap := len(set)
 	shrink := 1.3

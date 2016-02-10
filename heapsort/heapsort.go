@@ -1,5 +1,6 @@
 package heapsort
 
+// Sort sorts a slice of integers with heap sort.
 func Sort(set []int) []int {
 	length := len(set)
 	end := length - 1

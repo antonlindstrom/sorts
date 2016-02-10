@@ -1,5 +1,6 @@
 package selectionsort
 
+// Sort sorts a slice of integers with selection sort.
 func Sort(set []int) []int {
 	min := 0
 

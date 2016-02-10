@@ -1,5 +1,6 @@
 package bubblesort
 
+// Sort sorts a slice of integers with bubble sort.
 func Sort(set []int) []int {
 	swapped := false
 
@@ -9,12 +10,12 @@ func Sort(set []int) []int {
 
 			set[i-1] = b
 			set[i] = a
-			// swap
+
 			swapped = true
 		}
 	}
 
-	// recurse until we don't swap
+	// Recurse until we don't swap.
 	if swapped {
 		set = Sort(set)
 	}

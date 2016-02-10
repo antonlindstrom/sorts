@@ -1,6 +1,6 @@
 package mergesort
 
-// Mergesort (top-down)
+// Sort sorts a slice of integers with merge sort (top-down).
 func Sort(set []int) []int {
 	if len(set) <= 1 {
 		return set
@@ -11,31 +11,31 @@ func Sort(set []int) []int {
 
 	middle := len(set) / 2
 
-	// Append all before middle to left
+	// Append all before middle to left.
 	for _, i := range set[:middle] {
 		left = append(left, i)
 	}
 
-	// Append all after middle to right
+	// Append all after middle to right.
 	for _, i := range set[middle:] {
 		right = append(right, i)
 	}
 
-	// Recurse, yo!
+	// Recurse left and right.
 	left = Sort(left)
 	right = Sort(right)
 
-	// Jump to merge, which is the does the organizing
+	// Jump to merge, which is the does the organizing.
 	return merge(left, right)
 }
 
-// Merging
+// merge merges left and right.
 func merge(left, right []int) (result []int) {
 
-	// Run through all until the sides are empty
+	// Run through all until the sides are empty.
 	for len(left) > 0 || len(right) > 0 {
 
-		// Compare sides
+		// Compare sides.
 		if len(left) > 0 && len(right) > 0 {
 
 			if left[0] <= right[0] {

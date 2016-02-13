@@ -7,5 +7,5 @@ benchmark:
 	@go test -bench . ./...
 
 coverage:
-	@go get code.google.com/p/go.tools/cmd/cover
+	@go get golang.org/x/tools/cmd/cover
 	@go test -cover ./...

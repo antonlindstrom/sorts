@@ -8,7 +8,7 @@ func Sort(set []int) []int {
 
 	// Worst case pivot is to select the leftmost.
 	pivot := set[0]
-	set = set[1:len(set)]
+	set = set[1:]
 
 	var less []int
 	var greater []int
